@@ -16,16 +16,16 @@ License, supplemented by the additional permissions listed below.
 General Public License, and the "GNU GPL" refers to version 3 of the GNU
 General Public License.
 
-  "The Library" refers to a covered work governed by this License,
+  "The EnvironmentVariableParser" refers to a covered work governed by this License,
 other than an Application or a Combined Work as defined below.
 
   An "Application" is any work that makes use of an interface provided
-by the Library, but which is not otherwise based on the Library.
-Defining a subclass of a class defined by the Library is deemed a mode
-of using an interface provided by the Library.
+by the EnvironmentVariableParser, but which is not otherwise based on the EnvironmentVariableParser.
+Defining a subclass of a class defined by the EnvironmentVariableParser is deemed a mode
+of using an interface provided by the EnvironmentVariableParser.
 
   A "Combined Work" is a work produced by combining or linking an
-Application with the Library.  The particular version of the Library
+Application with the EnvironmentVariableParser.  The particular version of the EnvironmentVariableParser
 with which the Combined Work was made is also called the "Linked
 Version".
 
@@ -46,7 +46,7 @@ without being bound by section 3 of the GNU GPL.
 
   2. Conveying Modified Versions.
 
-  If you modify a copy of the Library, and, in your modifications, a
+  If you modify a copy of the EnvironmentVariableParser, and, in your modifications, a
 facility refers to a function or data to be supplied by an Application
 that uses the facility (other than as an argument passed when the
 facility is invoked), then you may convey a copy of the modified
@@ -60,17 +60,17 @@ version:
    b) under the GNU GPL, with none of the additional permissions of
    this License applicable to that copy.
 
-  3. Object Code Incorporating Material from Library Header Files.
+  3. Object Code Incorporating Material from EnvironmentVariableParser Header Files.
 
   The object code form of an Application may incorporate material from
-a header file that is part of the Library.  You may convey such object
+a header file that is part of the EnvironmentVariableParser.  You may convey such object
 code under terms of your choice, provided that, if the incorporated
 material is not limited to numerical parameters, data structure
 layouts and accessors, or small macros, inline functions and templates
 (ten or fewer lines in length), you do both of the following:
 
    a) Give prominent notice with each copy of the object code that the
-   Library is used in it and that the Library and its use are
+   EnvironmentVariableParser is used in it and that the EnvironmentVariableParser and its use are
    covered by this License.
 
    b) Accompany the object code with a copy of the GNU GPL and this license
@@ -80,19 +80,19 @@ layouts and accessors, or small macros, inline functions and templates
 
   You may convey a Combined Work under terms of your choice that,
 taken together, effectively do not restrict modification of the
-portions of the Library contained in the Combined Work and reverse
+portions of the EnvironmentVariableParser contained in the Combined Work and reverse
 engineering for debugging such modifications, if you also do each of
 the following:
 
    a) Give prominent notice with each copy of the Combined Work that
-   the Library is used in it and that the Library and its use are
+   the EnvironmentVariableParser is used in it and that the EnvironmentVariableParser and its use are
    covered by this License.
 
    b) Accompany the Combined Work with a copy of the GNU GPL and this license
    document.
 
    c) For a Combined Work that displays copyright notices during
-   execution, include the copyright notice for the Library among
+   execution, include the copyright notice for the EnvironmentVariableParser among
    these notices, as well as a reference directing the user to the
    copies of the GNU GPL and this license document.
 
@@ -107,10 +107,10 @@ the following:
        Corresponding Source.
 
        1) Use a suitable shared library mechanism for linking with the
-       Library.  A suitable mechanism is one that (a) uses at run time
-       a copy of the Library already present on the user's computer
+       EnvironmentVariableParser.  A suitable mechanism is one that (a) uses at run time
+       a copy of the EnvironmentVariableParser already present on the user's computer
        system, and (b) will operate properly with a modified version
-       of the Library that is interface-compatible with the Linked
+       of the EnvironmentVariableParser that is interface-compatible with the Linked
        Version.
 
    e) Provide Installation Information, but only if you would otherwise
@@ -128,17 +128,17 @@ the following:
   5. Combined Libraries.
 
   You may place library facilities that are a work based on the
-Library side by side in a single library together with other library
+EnvironmentVariableParser side by side in a single library together with other library
 facilities that are not Applications and are not covered by this
 License, and convey such a combined library under terms of your
 choice, if you do both of the following:
 
    a) Accompany the combined library with a copy of the same work based
-   on the Library, uncombined with any other library facilities,
+   on the EnvironmentVariableParser, uncombined with any other library facilities,
    conveyed under the terms of this License.
 
    b) Give prominent notice with the combined library that part of it
-   is a work based on the Library, and explaining where to find the
+   is a work based on the EnvironmentVariableParser, and explaining where to find the
    accompanying uncombined form of the same work.
 
   6. Revised Versions of the GNU Lesser General Public License.
@@ -149,17 +149,17 @@ versions will be similar in spirit to the present version, but may
 differ in detail to address new problems or concerns.
 
   Each version is given a distinguishing version number. If the
-Library as you received it specifies that a certain numbered version
+EnvironmentVariableParser as you received it specifies that a certain numbered version
 of the GNU Lesser General Public License "or any later version"
 applies to it, you have the option of following the terms and
 conditions either of that published version or of any later version
-published by the Free Software Foundation. If the Library as you
+published by the Free Software Foundation. If the EnvironmentVariableParser as you
 received it does not specify a version number of the GNU Lesser
 General Public License, you may choose any version of the GNU Lesser
 General Public License ever published by the Free Software Foundation.
 
-  If the Library as you received it specifies that a proxy can decide
+  If the EnvironmentVariableParser as you received it specifies that a proxy can decide
 whether future versions of the GNU Lesser General Public License shall
 apply, that proxy's public statement of acceptance of any version is
 permanent authorization for you to choose that version for the
-Library.
+EnvironmentVariableParser.
