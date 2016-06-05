@@ -7,18 +7,54 @@
  * user guide available at https://docs.gradle.org/2.10/userguide/tutorial_java_projects.html
  */
 
-// Apply the java plugin to add support for Java
-apply plugin: 'java'
+plugins {
+    id "com.jfrog.bintray" version "1.6"
+}
 
-// In this section you declare where to find the dependencies of your project
-repositories {
-    // Use 'jcenter' for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+group = 'org.rubms'
+version = '1.0.0'
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
+    apply plugin: 'java'
 }
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-core:1.10.19'
+}
+
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+            groupId 'org.rubms'
+            artifactId 'envvars4j'
+            version '1.0.0'
+        }
+    }
+}
+
+bintray {
+    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+    key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+    publications = ['MyPublication']
+    pkg {
+        repo = 'generic'
+        name = 'envvars4j'
+        userOrg = user
+        licenses = ['LGPL-3.0']
+        vcsUrl = 'https://github.com/rubms/envvars4j.git'
+        labels = ['environment', 'variables', 'configuration', 'java']
+        publicDownloadNumbers = true
+        version {
+            name = '1.0.0'
+            desc = 'Envvars4j version 1.0.0'
+        }
+    }
 }
