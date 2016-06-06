@@ -66,8 +66,6 @@ Then include the dependency in your project:
 
 From gradle
 ```groovy
-repositories
-
 dependencies {
    compile 'org.rubms:envvars4j:1.0.0'
 }
