@@ -15,6 +15,7 @@ That is what envvars4j tries to cover: automatic object population from a source
 You have to include the library dependency to your project.
 
 In order to do that, first include `https://dl.bintray.com/rubms/maven/` in your repository list:
+
 From gradle
 ```groovy
 repositories { 
@@ -23,6 +24,7 @@ repositories {
     } 
 }
 ```
+
 From maven
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -61,6 +63,7 @@ From maven
 ```
 
 Then include the dependency in your project:
+
 From gradle
 ```groovy
 repositories
@@ -69,6 +72,7 @@ dependencies {
    compile 'org.rubms:envvars4j:1.0.0'
 }
 ```
+
 From maven
 ```xml
 <dependency>
