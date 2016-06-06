@@ -1,5 +1,5 @@
 # envvars4j
-Environment variable parsing for Java.
+Environment variable parsing for Java. [![Build Status](https://travis-ci.org/rubms/envvars4j.svg?branch=master)](https://travis-ci.org/rubms/envvars4j)
 
 ## Why envvars4j
 Given the growing use of containers, like Docker, it is becoming more and more common to configure applications via environment variables because:
