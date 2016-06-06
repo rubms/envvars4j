@@ -20,7 +20,7 @@ You have to include the library dependency to your project:
 Once you have the dependency included in your project, using envvars4j is very simple.
 
 In the POJO in which you are going to place the configuration, annotate the fields to populate with `@VariableOption`, as shown in the following example:
-```
+```java
 public class Person {
     @VariableOption(name="GIVEN_NAME")
     private String givenName = "Alan Turing"; // The default value is Alan Turing
@@ -47,7 +47,7 @@ public class Person {
 ```
 
 In order to populate this POJO with the contents read from environment variables:
-```
+```java
 Person person = new Person();
 
 VariablePopulator variablePopulator = new VariablePopulator(person);
@@ -55,7 +55,7 @@ variablePopulator.populateFromVariables();
 ```
 
 In case you have implemented your own version of VariableProvider (instead of relying on the default environment variables behavior) you can specify your variable provider in the constructor of the VariablePopulator:
-```
+```java
 Person person = new Person();
 
 VariablePopulator variablePopulator = new VariablePopulator(person, yourVariableProvider);
