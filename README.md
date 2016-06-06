@@ -12,10 +12,74 @@ There are several Java libraries in charge of parsing arguments from the command
 That is what envvars4j tries to cover: automatic object population from a source of named variable values (already including a provider that uses the environment variables as source, which is the default behaviour).
 
 ## How to use envvars4j
-You have to include the library dependency to your project:
+You have to include the library dependency to your project.
 
-* From gradle: `TO-DO: pending concession of binary repository for the project`
-* From maven: `TO-DO: pending concession of binary repository for the project`
+In order to do that, first include `https://dl.bintray.com/rubms/maven/` in your repository list:
+From gradle
+```groovy
+repositories { 
+    maven { 
+        url "http://dl.bintray.com/rubms/maven" 
+    } 
+}
+```
+From maven
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
+    xmlns='http://maven.apache.org/SETTINGS/1.0.0'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>bintray-rubms-maven</id>
+                    <name>bintray</name>
+                    <url>http://dl.bintray.com/rubms/maven</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>bintray-rubms-maven</id>
+                    <name>bintray-plugins</name>
+                    <url>http://dl.bintray.com/rubms/maven</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <id>bintray</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>bintray</activeProfile>
+    </activeProfiles>
+</settings>
+```
+
+Then include the dependency in your project:
+From gradle
+```groovy
+repositories
+
+dependencies {
+   compile 'org.rubms:envvars4j:1.0.0'
+}
+```
+From maven
+```xml
+<dependency>
+  <groupId>org.rubms</groupId>
+  <artifactId>envvars4j</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+
+If you dont use an automated build solution like gradle or maven you can always download the jar from https://dl.bintray.com/rubms/maven/ and include it in your project.
 
 Once you have the dependency included in your project, using envvars4j is very simple.
 
